@@ -1,10 +1,8 @@
 package com.example.Depedency.Injection.Controllers;
 
-import com.example.Depedency.Injection.Services.GreetingServiceImpl;
+import com.example.Depedency.Injection.Services.PropertyInjectGreetingService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class SetterInjectCOntrollerTest {
 
@@ -12,7 +10,7 @@ class SetterInjectCOntrollerTest {
     @BeforeEach
     void setUp() {
         setterInjectCOntroller=new SetterInjectCOntroller();
-        setterInjectCOntroller.setGreetingService(new GreetingServiceImpl());
+        setterInjectCOntroller.setGreetingService(new PropertyInjectGreetingService());
     }
 
     @Test
