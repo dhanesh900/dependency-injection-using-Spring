@@ -15,8 +15,8 @@ public class DiUsingSpringApplication {
 
 	ApplicationContext con= SpringApplication.run(DiUsingSpringApplication.class, args);
 	MyController myController= (MyController) con.getBean("myController");
-	String greet=myController.sayHello();
-	System.out.println(greet);
+        System.out.println("-------------Primary--------");
+	System.out.println(myController.sayHello());
 	System.out.println("-------------Proprty--------");
 		PropertyInjectController propertyInjectController= (PropertyInjectController) con.getBean("propertyInjectController");
 		System.out.println(propertyInjectController.getGreeting());
